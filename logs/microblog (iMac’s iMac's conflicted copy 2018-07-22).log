@@ -17,22 +17,4 @@ Traceback (most recent call last):
   File "/Users/user/Dropbox/Python/Flask-app/microblog/app/routes.py", line 145, in explore
     return render_template('index.html', title='Explore', form=form, posts=posts.items,
 NameError: name 'form' is not defined
-2018-07-22 12:37:18,571 ERROR: Exception on /explore [GET] [in /Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py:1560]
-Traceback (most recent call last):
-  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/Users/user/Dropbox/Python/Flask-app/microblog/app/routes.py", line 145, in explore
-    return render_template('index.html', title='Explore', form=form, posts=posts.items,
-NameError: name 'form' is not defined
+2018-07-22 12:38:42,621 INFO: Microblog startup [in /Users/imac/Dropbox/Python/Flask-app/microblog/app/__init__.py:49]
