@@ -36,3 +36,7 @@ Traceback (most recent call last):
   File "/Users/user/Dropbox/Python/Flask-app/microblog/app/routes.py", line 145, in explore
     return render_template('index.html', title='Explore', form=form, posts=posts.items,
 NameError: name 'form' is not defined
+2018-07-23 20:01:59,828 INFO: Microblog startup [in /Users/imac/Dropbox/Python/Flask-app/microblog/app/__init__.py:51]
+2018-07-23 20:08:32,743 INFO: Microblog startup [in /Users/imac/Dropbox/Python/Flask-app/microblog/app/__init__.py:51]
+2018-07-23 20:09:30,854 INFO: Microblog startup [in /Users/imac/Dropbox/Python/Flask-app/microblog/app/__init__.py:51]
+2018-07-23 20:10:00,346 INFO: Microblog startup [in /Users/imac/Dropbox/Python/Flask-app/microblog/app/__init__.py:51]
