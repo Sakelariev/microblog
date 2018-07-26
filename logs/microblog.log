@@ -40,3 +40,52 @@ NameError: name 'form' is not defined
 2018-07-23 20:08:32,743 INFO: Microblog startup [in /Users/imac/Dropbox/Python/Flask-app/microblog/app/__init__.py:51]
 2018-07-23 20:09:30,854 INFO: Microblog startup [in /Users/imac/Dropbox/Python/Flask-app/microblog/app/__init__.py:51]
 2018-07-23 20:10:00,346 INFO: Microblog startup [in /Users/imac/Dropbox/Python/Flask-app/microblog/app/__init__.py:51]
+2018-07-26 11:47:45,015 INFO: Microblog startup [in /Users/user/Dropbox/Python/Flask-app/microblog/app/__init__.py:54]
+2018-07-26 11:47:58,309 INFO: Microblog startup [in /Users/user/Dropbox/Python/Flask-app/microblog/app/__init__.py:54]
+2018-07-26 13:03:48,323 INFO: Microblog startup [in /Users/user/Dropbox/Python/Flask-app/microblog/app/__init__.py:54]
+2018-07-26 13:03:53,762 ERROR: Exception on / [GET] [in /Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py", line 1610, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py", line 1831, in preprocess_request
+    rv = func()
+  File "/Users/user/Dropbox/Python/Flask-app/microblog/app/routes.py", line 186, in before_request
+    g.locale = str(get_locale())
+  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask_babel/__init__.py", line 257, in get_locale
+    rv = babel.locale_selector_func()
+  File "/Users/user/Dropbox/Python/Flask-app/microblog/app/__init__.py", line 57, in get_locale
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
+NameError: name 'request' is not defined
+2018-07-26 13:03:54,618 ERROR: Exception on /favicon.ico [GET] [in /Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py", line 1610, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask/app.py", line 1831, in preprocess_request
+    rv = func()
+  File "/Users/user/Dropbox/Python/Flask-app/microblog/app/routes.py", line 186, in before_request
+    g.locale = str(get_locale())
+  File "/Users/user/anaconda3/envs/flask-app/lib/python3.6/site-packages/flask_babel/__init__.py", line 257, in get_locale
+    rv = babel.locale_selector_func()
+  File "/Users/user/Dropbox/Python/Flask-app/microblog/app/__init__.py", line 57, in get_locale
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
+NameError: name 'request' is not defined
+2018-07-26 13:04:38,174 INFO: Microblog startup [in /Users/user/Dropbox/Python/Flask-app/microblog/app/__init__.py:55]
+2018-07-26 13:06:29,880 INFO: Microblog startup [in /Users/user/Dropbox/Python/Flask-app/microblog/app/__init__.py:55]
+2018-07-26 13:12:13,886 INFO: Microblog startup [in /Users/user/Dropbox/Python/Flask-app/microblog/app/__init__.py:55]
+2018-07-26 13:14:29,748 INFO: Microblog startup [in /Users/user/Dropbox/Python/Flask-app/microblog/app/__init__.py:55]
